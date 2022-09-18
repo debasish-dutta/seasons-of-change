@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -171,24 +172,24 @@ text-align: center;
 .waterfall {
     width: 100%;
     height: 100vh;
-    background: url("../../assets/waterfall_1.jpeg");
+    background: url("../../assets/waterfall_1_0000_Layer-1.png");
     background-size: 100% 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .waterpit {
     width: 100%;
     height: 100vh;
-    background: url("../../assets/waterfall.jpeg");
+    background: url("../../assets/waterfall_1_0001_Layer-0.png");
     background-size: 100% 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 9999;
     width: 32px;
     height: 32px;
@@ -198,30 +199,61 @@ text-align: center;
     color: #000;
     cursor: pointer;
     border: 0;
-    border-radius: 2px;
+    border-radius: 32px;
     text-decoration: none;
     transition: opacity 0.2s ease-out;
-    opacity: 0;
-  }
-  
-  #back-to-top:hover {
+    opacity: 0.8;
+}
+
+#back-to-top:hover {
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
-  }
-  
-  #back-to-top.show {
+}
+
+#back-to-top.show {
     opacity: 1;
-  }
+}
 
 
 footer {
-    /* position: fixed; */
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 4vh;  
     padding-left: 50px;
-    background: #4B466F;
+    background: #5db96f;
     font-family: Pacifico;
     font-size: 20px;
-    color: #F56469;
+    color: #4223bb;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.soc-icn {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-color: #818a91;
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+    transition: 0.3s;
+    justify-content: right;
+}
+.soc-icn svg{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    fill: #4223bb;
+}
+.soc-icn:hover{
+    background-color: #e25555;
+    border-radius: 20%;
+}
+
+
+.heart{ color:#e25555; }

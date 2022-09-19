@@ -29,10 +29,84 @@ body{
     }
 }
 
+/* Intro */
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/ld.jpeg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.abt{
+    height: 27%;
+    width: 46%;
+    margin: 10px;
+    position: absolute;
+    z-index: 5;
+    vertical-align: middle;
+    text-align: center;
+    top: 9vh;
+    left: 27%;
+    right: 27%;
+    border: 5px solid rosybrown;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: Pacifico;
+    font-size: 30px;
+    color: #ed9134;
+    padding: 10px 6px;
+}
+
+.wtn{
+    height: 7vh;
+    width: 46vw;
+    margin: 10px;
+    position: absolute;
+    z-index: 5;
+    vertical-align: middle;
+    text-align: center;
+    bottom: 9vh;
+    left: 27vw;
+    right: 27vw;
+    border: 5px solid rosybrown;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: Pacifico;
+    font-size: 40px;
+    color: aquamarine;
+    padding: 10px 6px;
+}
+.wtn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #e25555;
+}
+
+#down_arr {
+    position: absolute;
+    /* z-index: 99; */
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 32px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0.8;
+}
+
+#down_arr:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
 /* parallax 1 */
 /* scene 1 */
 
-.intro {
+.cherry_blossom {
     width: 100%;
     height: 100vh;
     background: url("../../assets/pexels-bagus-pangestu-1440476.jpeg");
@@ -40,14 +114,14 @@ body{
     background-attachment: fixed;
 }
 
-.intro h2 {
+.cherry_blossom h2 {
     color: #f00;
     font-size: 100px;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     padding-top: 30px;
 }
-.intro p {
+.cherry_blossom p {
     font-size: 90px;
     text-align: right;
     padding-right: 10vw;
@@ -58,7 +132,7 @@ body{
 }
 
 p {
-    color: #f00;
+    color: #00f;
     font-size: 69px;
     font-family: 'Allura', cursive;
 }
@@ -216,17 +290,20 @@ text-align: center;
 
 
 footer {
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     width: 100%;
     height: 4vh;  
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     background: #5db96f;
     font-family: Pacifico;
     font-size: 20px;
     color: #4223bb;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    
 }
 
 .soc-icn {
@@ -250,9 +327,10 @@ footer {
     right: 0;
     fill: #4223bb;
 }
-.soc-icn:hover{
+a svg:hover{
     background-color: #e25555;
-    border-radius: 20%;
+    border-radius: 50%;
+    transition: scale(1.3);
 }
 
 

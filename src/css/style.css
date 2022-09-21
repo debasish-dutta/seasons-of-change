@@ -57,8 +57,16 @@ body{
     font-size: 44px;
     color: #bf40ed;
     padding: 10px 6px;
+    cursor: default;
 }
 
+blockquote{
+    color: #4b10a3;
+}
+blockquote:hover{
+    color: #3e9106;
+    cursor: default;
+}
 .wtn{
     height: 7vh;
     width: 46%;
